@@ -248,80 +248,86 @@
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="grid lg:grid-cols-2 gap-12 items-stretch">
                 <!-- Mission Statement -->
-                <div class="order-2 lg:order-1">
-                    <div class="card-prominent p-8 lg:p-12 text-center lg:text-left hover-lift">
-                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-6">
-                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
+                <div class="order-2 lg:order-1 h-full flex">
+                    <div class="card-prominent p-8 lg:p-12 text-center lg:text-left hover-lift flex flex-col h-full">
+                        <div>
+                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-6">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-fluid-2xl font-inter font-bold text-text-primary mb-6">Our Mission</h3>
+                            <blockquote class="text-fluid-lg font-medium text-primary mb-6 italic">
+                                "To provide holistic education rooted in Christian values, fostering academic excellence, character development, and social responsibility."
+                            </blockquote>
+                            <p class="text-text-secondary leading-relaxed mb-6">
+                                We are committed to nurturing each student's intellectual, spiritual, emotional, and physical development through innovative teaching methods, comprehensive curriculum, and a supportive learning environment.
+                            </p>
+                            <ul class="text-left space-y-3 text-text-secondary">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    Excellence in academic achievement
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    Character formation through Christian values
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    Holistic development of every child
+                                </li>
+                            </ul>
                         </div>
-                        <h3 class="text-fluid-2xl font-inter font-bold text-text-primary mb-6">Our Mission</h3>
-                        <blockquote class="text-fluid-lg font-medium text-primary mb-6 italic">
-                            "To provide holistic education rooted in Christian values, fostering academic excellence, character development, and social responsibility."
-                        </blockquote>
-                        <p class="text-text-secondary leading-relaxed mb-6">
-                            We are committed to nurturing each student's intellectual, spiritual, emotional, and physical development through innovative teaching methods, comprehensive curriculum, and a supportive learning environment.
-                        </p>
-                        <ul class="text-left space-y-3 text-text-secondary">
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                                Excellence in academic achievement
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                                Character formation through Christian values
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                                Holistic development of every child
-                            </li>
-                        </ul>
+                        <div class="flex-grow"></div>
                     </div>
                 </div>
 
                 <!-- Vision Statement -->
-                <div class="order-1 lg:order-2">
-                    <div class="card-prominent p-8 lg:p-12 text-center lg:text-left hover-lift">
-                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-6">
-                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-                            </svg>
+                <div class="order-1 lg:order-2 h-full flex">
+                    <div class="card-prominent p-8 lg:p-12 text-center lg:text-left hover-lift flex flex-col h-full">
+                        <div>
+                            <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-6">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-fluid-2xl font-inter font-bold text-text-primary mb-6">Our Vision</h3>
+                            <blockquote class="text-fluid-lg font-medium text-secondary mb-6 italic">
+                                "To be a premier educational institution that develops confident, compassionate, and capable global citizens."
+                            </blockquote>
+                            <p class="text-text-secondary leading-relaxed mb-6">
+                                We envision graduates who excel academically while serving their communities with integrity, purpose, and unwavering commitment to making a positive difference in the world.
+                            </p>
+                            <ul class="text-left space-y-3 text-text-secondary">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-secondary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    Global citizenship with local values
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-secondary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    Leadership in service to humanity
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-secondary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    Innovation in education and life
+                                </li>
+                            </ul>
                         </div>
-                        <h3 class="text-fluid-2xl font-inter font-bold text-text-primary mb-6">Our Vision</h3>
-                        <blockquote class="text-fluid-lg font-medium text-secondary mb-6 italic">
-                            "To be a premier educational institution that develops confident, compassionate, and capable global citizens."
-                        </blockquote>
-                        <p class="text-text-secondary leading-relaxed mb-6">
-                            We envision graduates who excel academically while serving their communities with integrity, purpose, and unwavering commitment to making a positive difference in the world.
-                        </p>
-                        <ul class="text-left space-y-3 text-text-secondary">
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-secondary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                                Global citizenship with local values
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-secondary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                                Leadership in service to humanity
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-secondary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                                Innovation in education and life
-                            </li>
-                        </ul>
+                        <div class="flex-grow"></div>
                     </div>
                 </div>
             </div>
@@ -346,10 +352,10 @@
                 <div id="leadership-carousel" class="overflow-hidden">
                     <div class="flex transition-transform duration-500 ease-in-out" id="leadership-track">
                         <!-- Leadership Card 1 - Principal -->
-                        <div class="w-full flex-shrink-0 px-4">
+                        <div class="w-full flex-shrink-0 px-6">
                             <div class="grid lg:grid-cols-2 gap-12 items-center">
-                                <div class="order-2 lg:order-1">
-                                    <div class="card-moderate p-8 hover-lift">
+                                <div class="order-2 lg:order-1 h-full flex">
+                                    <div class="card-moderate p-8 hover-lift flex flex-col h-full">
                                         <div class="mb-6">
                                             <h3 class="text-fluid-2xl font-inter font-bold text-text-primary mb-2">Rev. Dr. Sarah Johnson</h3>
                                             <p class="text-fluid-lg text-primary font-medium mb-2">Principal & Educational Director</p>
@@ -372,27 +378,27 @@
                                         <button class="mt-6 btn-primary hover-lift" onclick="toggleProfile('principal')">
                                             View Full Profile
                                         </button>
+                                        <!-- Filler div to force equal height -->
+                                        <div class="flex-grow"></div>
                                     </div>
                                 </div>
-                                <div class="order-1 lg:order-2">
-                                    <div class="relative">
-                                        <div class="aspect-square rounded-2xl overflow-hidden shadow-moderate">
+                                <div class="order-1 lg:order-2 h-full flex">
+                                    <div class="relative flex flex-col h-full w-full">
+                                        <div class="aspect-square rounded-2xl overflow-hidden shadow-moderate flex-grow">
                                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop" alt="Rev. Dr. Sarah Johnson - Principal" class="w-full h-full object-cover" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
                                         </div>
-                                        <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-primary rounded-full flex items-center justify-center shadow-moderate">
-                                            <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                            </svg>
-                                        </div>
+
+                                        <!-- Filler div to force equal height -->
+                                        <div class="flex-grow"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Leadership Card 2 - Vice Principal -->
-                        <div class="w-full flex-shrink-0 px-4">
+                        <div class="w-full flex-shrink-0 px-6">
                             <div class="grid lg:grid-cols-2 gap-12 items-center">
-                                <div class="order-2 lg:order-1">
+                                <div class="order-2 lg:order-1 h-full flex">
                                     <div class="card-moderate p-8 hover-lift">
                                         <div class="mb-6">
                                             <h3 class="text-fluid-2xl font-inter font-bold text-text-primary mb-2">Mr. David Kumar</h3>
@@ -418,15 +424,10 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="order-1 lg:order-2">
+                                <div class="order-1 lg:order-2 h-full flex">
                                     <div class="relative">
                                         <div class="aspect-square rounded-2xl overflow-hidden shadow-moderate">
                                             <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Mr. David Kumar - Vice Principal" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
-                                        </div>
-                                        <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-secondary rounded-full flex items-center justify-center shadow-moderate">
-                                            <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-                                            </svg>
                                         </div>
                                     </div>
                                 </div>
@@ -434,9 +435,9 @@
                         </div>
 
                         <!-- Leadership Card 3 - Administrator -->
-                        <div class="w-full flex-shrink-0 px-4">
+                        <div class="w-full flex-shrink-0 px-6">
                             <div class="grid lg:grid-cols-2 gap-12 items-center">
-                                <div class="order-2 lg:order-1">
+                                <div class="order-2 lg:order-1 h-full flex">
                                     <div class="card-moderate p-8 hover-lift">
                                         <div class="mb-6">
                                             <h3 class="text-fluid-2xl font-inter font-bold text-text-primary mb-2">Mrs. Priya Sharma</h3>
@@ -462,15 +463,10 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="order-1 lg:order-2">
+                                <div class="order-1 lg:order-2 h-full flex">
                                     <div class="relative">
                                         <div class="aspect-square rounded-2xl overflow-hidden shadow-moderate">
-                                            <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Mrs. Priya Sharma - Administrative Director" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616c9c0e0e0?q=80&w=2787&auto=format&fit=crop'; this.onerror=null;" />
-                                        </div>
-                                        <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-accent rounded-full flex items-center justify-center shadow-moderate">
-                                            <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                                            </svg>
+                                            <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Mr. David Kumar - Vice Principal" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
                                         </div>
                                     </div>
                                 </div>
@@ -545,8 +541,8 @@
                                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop" alt="Rev. Dr. Sarah Johnson" class="w-full h-full object-cover" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
                                 </div>
                                 <div>
-                                    <h3 class="font-inter font-bold text-text-primary">Rev. Dr. Sarah Johnson</h3>
-                                    <p class="text-text-secondary">Principal & Educational Director</p>
+                                    <h3 class="font-inter font-bold text-text-primary">Mr. Venugopal V</h3>
+                                    <p class="text-text-secondary">Principal</p>
                                 </div>
                             </div>
                         </div>
@@ -719,13 +715,13 @@
                         </svg>
                         <span>Download Prospectus (PDF)</span>
                     </button>
-                    <button class="btn-secondary hover-lift flex items-center space-x-2">
+                    <a href="https://www.google.com/local/place/fid/0x3bad4a09c7d9ebe7:0x18be8408ebac361/photosphere?iu=https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid%3D-FRY80LZFd1qUJyr7x40KA%26cb_client%3Dlu.gallery.gps%26w%3D160%26h%3D106%26yaw%3D221.98486%26pitch%3D0%26thumbfov%3D100&ik=CAISFi1GUlk4MExaRmQxcVVKeXI3eDQwS0E%3D" target="_blank" rel="noopener" class="btn-secondary hover-lift flex items-center space-x-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
                         </svg>
                         <span>Virtual Campus Tour</span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
