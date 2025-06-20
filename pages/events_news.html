@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events & News - CSI Vellore Diocese Matriculation Higher Secondary School</title>
+    <meta name="description" content="Stay updated with latest school events, news, announcements and activities at CSI Vellore Diocese School. View upcoming events calendar and recent news." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcsischool7729back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background font-body">
+    <!-- Header Section -->
+    <header class="bg-surface shadow-subtle sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 lg:h-20">
+                <!-- Logo Section -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 lg:w-16 lg:h-16 bg-primary rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 lg:w-10 lg:h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                            <path d="M12 7L8 10v4l4 2 4-2v-4l-4-3z" fill="white" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <div class="hidden sm:block">
+                        <h1 class="text-lg lg:text-xl font-inter font-bold text-text-primary">CSI Vellore Diocese</h1>
+                        <p class="text-xs lg:text-sm text-text-secondary">Matriculation Higher Secondary School</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="homepage.html" class="nav-link">Home</a>
+                    <a href="about_school.html" class="nav-link">About School</a>
+                    <a href="academics.html" class="nav-link">Academics</a>
+                    <a href="facilities.html" class="nav-link">Facilities</a>
+                    <a href="events_news.html" class="nav-link active font-medium">Events & News</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button & Search -->
+                <div class="flex items-center space-x-3">
+                    <button class="p-2 rounded-md hover:bg-gray-100 focus-ring" aria-label="Search">
+                        <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </button>
+                    <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md hover:bg-gray-100 focus-ring" aria-label="Menu">
+                        <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="lg:hidden hidden border-t border-gray-200">
+                <div class="py-4 space-y-2">
+                    <a href="homepage.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Home</a>
+                    <a href="about_school.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">About School</a>
+                    <a href="academics.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Academics</a>
+                    <a href="facilities.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Facilities</a>
+                    <a href="events_news.html" class="block px-4 py-2 text-primary font-medium bg-primary-50 rounded-md">Events & News</a>
+                    <a href="contact.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="bg-surface py-4 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="breadcrumb">
+                <a href="homepage.html" class="breadcrumb-item">Home</a>
+                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                <span class="breadcrumb-item active">Events & News</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Live News Ticker -->
+    <section class="bg-primary text-white py-3 overflow-hidden">
+        <div class="flex items-center">
+            <div class="bg-accent px-4 py-2 font-medium text-sm whitespace-nowrap">
+                LATEST NEWS
+            </div>
+            <div class="flex-1 relative overflow-hidden">
+                <div id="news-ticker" class="flex animate-marquee whitespace-nowrap">
+                    <span class="px-8">🎉 Annual Day celebrations scheduled for December 15th, 2024 - Registration open now!</span>
+                    <span class="px-8">🏆 Our debate team wins inter-school championship for the third consecutive year</span>
+                    <span class="px-8">📚 Science Fair 2024 submissions deadline extended to November 30th</span>
+                    <span class="px-8">🎭 Drama Club auditions for winter play begin next Monday</span>
+                    <span class="px-8">📝 Parent-Teacher meeting scheduled for December 5th - Check your portal for timings</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="py-12 lg:py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-fluid-4xl font-inter font-bold text-text-primary mb-4">Events & News</h1>
+                <p class="text-fluid-lg text-text-secondary max-w-3xl mx-auto mb-8">
+                    Stay connected with our vibrant school community through upcoming events, latest news, and important announcements
+                </p>
+                
+                <!-- Notification Subscription -->
+                <div class="inline-flex items-center space-x-4 bg-surface p-4 rounded-lg shadow-subtle">
+                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5zM12 3v13l-3-3m6 0l-3 3"/>
+                        </svg>
+                    </div>
+                    <div class="text-left">
+                        <p class="font-medium text-text-primary">Get Instant Updates</p>
+                        <p class="text-sm text-text-secondary">Subscribe to push notifications</p>
+                    </div>
+                    <button class="btn-primary text-sm px-4 py-2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="py-8 bg-surface border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-4 items-center justify-between">
+                <!-- Search Bar -->
+                <div class="relative flex-1 max-w-md">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <input type="text" id="search-input" placeholder="Search events, news, or announcements..." class="form-input pl-10 w-full" />
+                </div>
+
+                <!-- Filter Options -->
+                <div class="flex flex-wrap gap-3">
+                    <select class="form-input text-sm">
+                        <option value>All Categories</option>
+                        <option value="academic">Academic</option>
+                        <option value="sports">Sports</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="holidays">Holidays</option>
+                    </select>
+                    <select class="form-input text-sm">
+                        <option value>All Time</option>
+                        <option value="this-week">This Week</option>
+                        <option value="this-month">This Month</option>
+                        <option value="next-month">Next Month</option>
+                    </select>
+                    <button class="bg-gray-100 text-text-secondary px-4 py-2 rounded text-sm hover:bg-gray-200 transition-colors duration-200">
+                        Reset Filters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section class="py-12 lg:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Tab Navigation -->
+            <div class="flex justify-center mb-12">
+                <div class="bg-gray-100 p-1 rounded-lg">
+                    <button id="events-tab" class="tab-button active px-6 py-3 rounded-md font-medium transition-all duration-200">
+                        Upcoming Events
+                    </button>
+                    <button id="news-tab" class="tab-button px-6 py-3 rounded-md font-medium transition-all duration-200">
+                        Latest News
+                    </button>
+                </div>
+            </div>
+
+            <!-- Events Tab Content -->
+            <div id="events-content" class="tab-content">
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Events Calendar -->
+                    <div class="lg:col-span-2">
+                        <div class="card-moderate p-6 mb-8">
+                            <div class="flex items-center justify-between mb-6">
+                                <h2 class="text-fluid-2xl font-inter font-bold text-text-primary">December 2024</h2>
+                                <div class="flex space-x-2">
+                                    <button class="p-2 hover:bg-gray-100 rounded-md transition-colors duration-200">
+                                        <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                        </svg>
+                                    </button>
+                                    <button class="p-2 hover:bg-gray-100 rounded-md transition-colors duration-200">
+                                        <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Calendar Grid -->
+                            <div class="grid grid-cols-7 gap-1 mb-4">
+                                <div class="text-center text-sm font-medium text-text-secondary p-2">Sun</div>
+                                <div class="text-center text-sm font-medium text-text-secondary p-2">Mon</div>
+                                <div class="text-center text-sm font-medium text-text-secondary p-2">Tue</div>
+                                <div class="text-center text-sm font-medium text-text-secondary p-2">Wed</div>
+                                <div class="text-center text-sm font-medium text-text-secondary p-2">Thu</div>
+                                <div class="text-center text-sm font-medium text-text-secondary p-2">Fri</div>
+                                <div class="text-center text-sm font-medium text-text-secondary p-2">Sat</div>
+                            </div>
+
+                            <div class="grid grid-cols-7 gap-1">
+                                <!-- Calendar dates with events -->
+                                <div class="calendar-date p-2 text-center text-text-secondary">1</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">2</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">3</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">4</div>
+                                <div class="calendar-date event-date p-2 text-center cursor-pointer hover:bg-primary-50 rounded-md transition-colors duration-200" data-event="parent-meeting">
+                                    <span class="block">5</span>
+                                    <div class="w-2 h-2 bg-primary rounded-full mx-auto mt-1"></div>
+                                </div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">6</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">7</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">8</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">9</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">10</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">11</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">12</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">13</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">14</div>
+                                <div class="calendar-date event-date p-2 text-center cursor-pointer hover:bg-accent-50 rounded-md transition-colors duration-200" data-event="annual-day">
+                                    <span class="block">15</span>
+                                    <div class="w-2 h-2 bg-accent rounded-full mx-auto mt-1"></div>
+                                </div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">16</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">17</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">18</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">19</div>
+                                <div class="calendar-date event-date p-2 text-center cursor-pointer hover:bg-secondary-50 rounded-md transition-colors duration-200" data-event="sports-day">
+                                    <span class="block">20</span>
+                                    <div class="w-2 h-2 bg-secondary rounded-full mx-auto mt-1"></div>
+                                </div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">21</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">22</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">23</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">24</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">25</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">26</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">27</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">28</div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">29</div>
+                                <div class="calendar-date event-date p-2 text-center cursor-pointer hover:bg-primary-50 rounded-md transition-colors duration-200" data-event="science-fair">
+                                    <span class="block">30</span>
+                                    <div class="w-2 h-2 bg-primary rounded-full mx-auto mt-1"></div>
+                                </div>
+                                <div class="calendar-date p-2 text-center text-text-secondary">31</div>
+                            </div>
+
+                            <!-- Event Legend -->
+                            <div class="mt-6 flex flex-wrap gap-4 text-sm">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-primary rounded-full"></div>
+                                    <span class="text-text-secondary">Academic</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                                    <span class="text-text-secondary">Sports</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-accent rounded-full"></div>
+                                    <span class="text-text-secondary">Cultural</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event Details Sidebar -->
+                    <div class="space-y-6">
+                        <div class="card-moderate p-6">
+                            <h3 class="text-fluid-xl font-inter font-bold text-text-primary mb-4">Upcoming Events</h3>
+                            
+                            <!-- Event Card -->
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-primary pl-4 py-2 cursor-pointer hover:bg-primary-50 rounded-r-md transition-colors duration-200" data-event="parent-meeting">
+                                    <div class="flex items-start justify-between">
+                                        <div>
+                                            <h4 class="font-medium text-text-primary">Parent-Teacher Meeting</h4>
+                                            <p class="text-sm text-text-secondary">December 5, 2024</p>
+                                            <p class="text-sm text-text-secondary">9:00 AM - 4:00 PM</p>
+                                        </div>
+                                        <span class="status-success">Academic</span>
+                                    </div>
+                                </div>
+
+                                <div class="border-l-4 border-accent pl-4 py-2 cursor-pointer hover:bg-accent-50 rounded-r-md transition-colors duration-200" data-event="annual-day">
+                                    <div class="flex items-start justify-between">
+                                        <div>
+                                            <h4 class="font-medium text-text-primary">Annual Day Celebration</h4>
+                                            <p class="text-sm text-text-secondary">December 15, 2024</p>
+                                            <p class="text-sm text-text-secondary">6:00 PM - 9:00 PM</p>
+                                        </div>
+                                        <span class="status-error">Cultural</span>
+                                    </div>
+                                </div>
+
+                                <div class="border-l-4 border-secondary pl-4 py-2 cursor-pointer hover:bg-secondary-50 rounded-r-md transition-colors duration-200" data-event="sports-day">
+                                    <div class="flex items-start justify-between">
+                                        <div>
+                                            <h4 class="font-medium text-text-primary">Inter-House Sports Day</h4>
+                                            <p class="text-sm text-text-secondary">December 20, 2024</p>
+                                            <p class="text-sm text-text-secondary">8:00 AM - 5:00 PM</p>
+                                        </div>
+                                        <span class="status-warning">Sports</span>
+                                    </div>
+                                </div>
+
+                                <div class="border-l-4 border-primary pl-4 py-2 cursor-pointer hover:bg-primary-50 rounded-r-md transition-colors duration-200" data-event="science-fair">
+                                    <div class="flex items-start justify-between">
+                                        <div>
+                                            <h4 class="font-medium text-text-primary">Science Fair 2024</h4>
+                                            <p class="text-sm text-text-secondary">December 30, 2024</p>
+                                            <p class="text-sm text-text-secondary">10:00 AM - 3:00 PM</p>
+                                        </div>
+                                        <span class="status-success">Academic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notices & Circulars -->
+                        <div class="card-moderate p-6">
+                            <h3 class="text-fluid-xl font-inter font-bold text-text-primary mb-4">Notices & Circulars</h3>
+                            
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+                                    <div class="flex items-center space-x-3">
+                                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                        </svg>
+                                        <div>
+                                            <p class="font-medium text-text-primary text-sm">Winter Holiday Notice</p>
+                                            <p class="text-xs text-text-secondary">Posted: Nov 28, 2024</p>
+                                        </div>
+                                    </div>
+                                    <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                    </svg>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+                                    <div class="flex items-center space-x-3">
+                                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                        </svg>
+                                        <div>
+                                            <p class="font-medium text-text-primary text-sm">Exam Schedule - Term 2</p>
+                                            <p class="text-xs text-text-secondary">Posted: Nov 25, 2024</p>
+                                        </div>
+                                    </div>
+                                    <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                    </svg>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+                                    <div class="flex items-center space-x-3">
+                                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                        </svg>
+                                        <div>
+                                            <p class="font-medium text-text-primary text-sm">Fee Payment Reminder</p>
+                                            <p class="text-xs text-text-secondary">Posted: Nov 22, 2024</p>
+                                        </div>
+                                    </div>
+                                    <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Tab Content -->
+            <div id="news-content" class="tab-content hidden">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Featured News Article -->
+                    <div class="md:col-span-2 lg:col-span-2">
+                        <article class="card-moderate overflow-hidden hover-lift cursor-pointer">
+                            <div class="aspect-video overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2940&auto=format&fit=crop" alt="Students celebrating achievement" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-4 mb-3">
+                                    <span class="status-success">Achievement</span>
+                                    <span class="text-sm text-text-secondary">November 28, 2024</span>
+                                </div>
+                                <h2 class="text-fluid-2xl font-inter font-bold text-text-primary mb-3">
+                                    CSI Students Excel in State Board Examinations
+                                </h2>
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Our Class XII students have achieved an outstanding 98% pass rate in the recent state board examinations, with 45 students scoring above 90%. This remarkable achievement reflects our commitment to academic excellence and dedicated teaching methodology.
+                                </p>
+                                <button class="text-primary font-medium hover:text-primary-700 transition-colors duration-200">
+                                    Read Full Article →
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- News Sidebar -->
+                    <div class="space-y-6">
+                        <!-- Recent News -->
+                        <div class="card-moderate p-6">
+                            <h3 class="text-fluid-xl font-inter font-bold text-text-primary mb-4">Recent News</h3>
+                            
+                            <div class="space-y-4">
+                                <article class="border-b border-gray-200 pb-4 last:border-b-0 cursor-pointer hover:bg-gray-50 p-2 rounded-md transition-colors duration-200">
+                                    <div class="flex items-start space-x-3">
+                                        <img src="https://images.pixabay.com/photo/2017/05/13/12/40/fashion-2309519_1280.jpg" alt="Science lab" class="w-16 h-16 object-cover rounded-md flex-shrink-0" onerror="this.src='https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=2832&auto=format&fit=crop'; this.onerror=null;" />
+                                        <div class="flex-1">
+                                            <h4 class="font-medium text-text-primary text-sm mb-1">New Science Laboratory Inaugurated</h4>
+                                            <p class="text-xs text-text-secondary mb-2">State-of-the-art equipment installed for enhanced learning experience...</p>
+                                            <span class="text-xs text-text-secondary">Nov 25, 2024</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="border-b border-gray-200 pb-4 last:border-b-0 cursor-pointer hover:bg-gray-50 p-2 rounded-md transition-colors duration-200">
+                                    <div class="flex items-start space-x-3">
+                                        <img src="https://images.pexels.com/photos/8613204/pexels-photo-8613204.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Debate competition" class="w-16 h-16 object-cover rounded-md flex-shrink-0" onerror="this.src='https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                                        <div class="flex-1">
+                                            <h4 class="font-medium text-text-primary text-sm mb-1">Debate Team Wins Championship</h4>
+                                            <p class="text-xs text-text-secondary mb-2">Third consecutive victory in inter-school debate competition...</p>
+                                            <span class="text-xs text-text-secondary">Nov 22, 2024</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="border-b border-gray-200 pb-4 last:border-b-0 cursor-pointer hover:bg-gray-50 p-2 rounded-md transition-colors duration-200">
+                                    <div class="flex items-start space-x-3">
+                                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2832&auto=format&fit=crop" alt="Sports achievement" class="w-16 h-16 object-cover rounded-md flex-shrink-0" onerror="this.src='https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                        <div class="flex-1">
+                                            <h4 class="font-medium text-text-primary text-sm mb-1">Basketball Team Reaches Finals</h4>
+                                            <p class="text-xs text-text-secondary mb-2">Outstanding performance in district level tournament...</p>
+                                            <span class="text-xs text-text-secondary">Nov 20, 2024</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Past Event Reports -->
+                        <div class="card-moderate p-6">
+                            <h3 class="text-fluid-xl font-inter font-bold text-text-primary mb-4">Past Event Reports</h3>
+                            
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+                                    <div>
+                                        <p class="font-medium text-text-primary text-sm">Diwali Celebration 2024</p>
+                                        <p class="text-xs text-text-secondary">Cultural program with 200+ participants</p>
+                                    </div>
+                                    <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+                                    <div>
+                                        <p class="font-medium text-text-primary text-sm">Science Exhibition</p>
+                                        <p class="text-xs text-text-secondary">150 innovative projects displayed</p>
+                                    </div>
+                                    <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+                                    <div>
+                                        <p class="font-medium text-text-primary text-sm">Teachers' Day Program</p>
+                                        <p class="text-xs text-text-secondary">Special appreciation ceremony</p>
+                                    </div>
+                                    <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional News Articles -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    <article class="card-moderate overflow-hidden hover-lift cursor-pointer">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop" alt="Library renovation" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.pixabay.com/photo/2017/05/13/12/40/fashion-2309519_1280.jpg'; this.onerror=null;" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center space-x-4 mb-3">
+                                <span class="status-success">Infrastructure</span>
+                                <span class="text-sm text-text-secondary">Nov 18, 2024</span>
+                            </div>
+                            <h3 class="text-fluid-lg font-inter font-bold text-text-primary mb-3">
+                                Library Renovation Complete
+                            </h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">
+                                Our school library has been completely renovated with modern furniture, digital catalog system, and expanded reading spaces for students.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card-moderate overflow-hidden hover-lift cursor-pointer">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Environmental initiative" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=2832&auto=format&fit=crop'; this.onerror=null;" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center space-x-4 mb-3">
+                                <span class="status-warning">Environment</span>
+                                <span class="text-sm text-text-secondary">Nov 15, 2024</span>
+                            </div>
+                            <h3 class="text-fluid-lg font-inter font-bold text-text-primary mb-3">
+                                Green Campus Initiative
+                            </h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">
+                                Students and teachers collaborate on eco-friendly projects including solar panels, rainwater harvesting, and organic gardening.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card-moderate overflow-hidden hover-lift cursor-pointer">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2940&auto=format&fit=crop" alt="Community service" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/8613204/pexels-photo-8613204.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center space-x-4 mb-3">
+                                <span class="status-error">Community</span>
+                                <span class="text-sm text-text-secondary">Nov 12, 2024</span>
+                            </div>
+                            <h3 class="text-fluid-lg font-inter font-bold text-text-primary mb-3">
+                                Community Service Week
+                            </h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">
+                                Students participate in various community service activities including teaching underprivileged children and environmental cleanup drives.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Modal -->
+    <div id="event-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-surface rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 id="modal-title" class="text-fluid-2xl font-inter font-bold text-text-primary"></h2>
+                    <button id="close-modal" class="p-2 hover:bg-gray-100 rounded-md transition-colors duration-200">
+                        <svg class="w-6 h-6 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div id="modal-content" class="space-y-4">
+                    <!-- Dynamic content will be inserted here -->
+                </div>
+                
+                <div class="mt-6 flex space-x-4">
+                    <button class="btn-primary">Register Now</button>
+                    <button class="bg-gray-100 text-text-primary px-6 py-3 rounded font-medium hover:bg-gray-200 transition-colors duration-200">
+                        Add to Calendar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- School Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-inter font-bold">CSI Vellore Diocese</h3>
+                            <p class="text-gray-300">Matriculation Higher Secondary School</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Nurturing young minds with Christian values and academic excellence since 1985. We are committed to developing confident, compassionate, and capable global citizens.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-700 transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-700 transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-700 transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-700 transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-inter font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about_school.html" class="text-gray-300 hover:text-white transition-colors duration-200">About School</a></li>
+                        <li><a href="academics.html" class="text-gray-300 hover:text-white transition-colors duration-200">Academics</a></li>
+                        <li><a href="facilities.html" class="text-gray-300 hover:text-white transition-colors duration-200">Facilities</a></li>
+                        <li><a href="events_news.html" class="text-gray-300 hover:text-white transition-colors duration-200">Events & News</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors duration-200">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-inter font-semibold mb-6">Contact Info</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <p class="text-gray-300 text-sm">123 Education Street, Vellore, Tamil Nadu 632001</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <p class="text-gray-300 text-sm">+91 416 222 3333</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <p class="text-gray-300 text-sm">info@csivellore.edu.in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-300 text-sm mb-4 md:mb-0">
+                        © 2025 CSI Vellore Diocese Matriculation Higher Secondary School. All Rights Reserved.
+                    </p>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Privacy Policy</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Terms of Service</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Elements -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // News Ticker Animation
+        const ticker = document.getElementById('news-ticker');
+        let tickerPosition = 0;
+
+        function animateTicker() {
+            tickerPosition -= 1;
+            if (tickerPosition <= -ticker.scrollWidth / 2) {
+                tickerPosition = 0;
+            }
+            ticker.style.transform = `translateX(${tickerPosition}px)`;
+            requestAnimationFrame(animateTicker);
+        }
+
+        // Start ticker animation
+        animateTicker();
+
+        // Tab Functionality
+        const eventsTab = document.getElementById('events-tab');
+        const newsTab = document.getElementById('news-tab');
+        const eventsContent = document.getElementById('events-content');
+        const newsContent = document.getElementById('news-content');
+
+        function switchTab(activeTab, inactiveTab, activeContent, inactiveContent) {
+            activeTab.classList.add('active', 'bg-white', 'text-primary', 'shadow-subtle');
+            activeTab.classList.remove('text-text-secondary');
+            inactiveTab.classList.remove('active', 'bg-white', 'text-primary', 'shadow-subtle');
+            inactiveTab.classList.add('text-text-secondary');
+            
+            activeContent.classList.remove('hidden');
+            inactiveContent.classList.add('hidden');
+        }
+
+        eventsTab.addEventListener('click', () => {
+            switchTab(eventsTab, newsTab, eventsContent, newsContent);
+        });
+
+        newsTab.addEventListener('click', () => {
+            switchTab(newsTab, eventsTab, newsContent, eventsContent);
+        });
+
+        // Event Modal Functionality
+        const eventModal = document.getElementById('event-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalContent = document.getElementById('modal-content');
+        const closeModal = document.getElementById('close-modal');
+
+        const eventData = {
+            'parent-meeting': {
+                title: 'Parent-Teacher Meeting',
+                date: 'December 5, 2024',
+                time: '9:00 AM - 4:00 PM',
+                venue: 'School Auditorium & Classrooms',
+                description: 'Annual parent-teacher meeting to discuss student progress, academic performance, and development plans. Individual meetings scheduled with class teachers.',
+                requirements: ['Student Report Card', 'Previous Meeting Notes', 'Any Specific Concerns'],
+                contact: 'admin@csivellore.edu.in'
+            },
+            'annual-day': {
+                title: 'Annual Day Celebration',
+                date: 'December 15, 2024',
+                time: '6:00 PM - 9:00 PM',
+                venue: 'School Main Auditorium',
+                description: 'Grand celebration featuring cultural performances, award ceremonies, and recognition of student achievements. Special guest performances and dinner included.',
+                requirements: ['Formal Dress Code', 'Registration Required', 'Invitation Card'],
+                contact: 'events@csivellore.edu.in'
+            },
+            'sports-day': {
+                title: 'Inter-House Sports Day',
+                date: 'December 20, 2024',
+                time: '8:00 AM - 5:00 PM',
+                venue: 'School Sports Complex',
+                description: 'Annual sports competition between school houses featuring track and field events, team sports, and individual competitions. Prizes and trophies for winners.',
+                requirements: ['Sports Uniform', 'Water Bottle', 'Medical Certificate'],
+                contact: 'sports@csivellore.edu.in'
+            },
+            'science-fair': {
+                title: 'Science Fair 2024',
+                date: 'December 30, 2024',
+                time: '10:00 AM - 3:00 PM',
+                venue: 'Science Block & Exhibition Hall',
+                description: 'Student science projects exhibition with innovative experiments, research presentations, and interactive demonstrations. Judging by expert panel.',
+                requirements: ['Project Registration', 'Display Materials', 'Presentation Slides'],
+                contact: 'science@csivellore.edu.in'
+            }
+        };
+
+        // Event click handlers
+        document.querySelectorAll('[data-event]').forEach(element => {
+            element.addEventListener('click', (e) => {
+                const eventKey = e.currentTarget.getAttribute('data-event');
+                const event = eventData[eventKey];
+                
+                if (event) {
+                    modalTitle.textContent = event.title;
+                    modalContent.innerHTML = `
+                        <div class="space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="font-medium text-text-primary mb-2">Date & Time</h4>
+                                    <p class="text-text-secondary">${event.date}</p>
+                                    <p class="text-text-secondary">${event.time}</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-text-primary mb-2">Venue</h4>
+                                    <p class="text-text-secondary">${event.venue}</p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Description</h4>
+                                <p class="text-text-secondary leading-relaxed">${event.description}</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Requirements</h4>
+                                <ul class="list-disc list-inside text-text-secondary space-y-1">
+                                    ${event.requirements.map(req => `<li>${req}</li>`).join('')}
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Contact</h4>
+                                <p class="text-text-secondary">${event.contact}</p>
+                            </div>
+                        </div>
+                    `;
+                    eventModal.classList.remove('hidden');
+                }
+            });
+        });
+
+        // Close modal handlers
+        closeModal.addEventListener('click', () => {
+            eventModal.classList.add('hidden');
+        });
+
+        eventModal.addEventListener('click', (e) => {
+            if (e.target === eventModal) {
+                eventModal.classList.add('hidden');
+            }
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('search-input');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            // Implement search logic here
+            console.log('Searching for:', searchTerm);
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-moderate');
+            } else {
+                header.classList.remove('shadow-moderate');
+            }
+        });
+    </script>
+
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .animate-marquee {
+            animation: marquee 30s linear infinite;
+        }
+        
+        .tab-button.active {
+            @apply bg-white text-primary shadow-subtle;
+        }
+        
+        .tab-button {
+            @apply text-text-secondary;
+        }
+        
+        .calendar-date {
+            @apply text-text-primary;
+        }
+        
+        .calendar-date.event-date {
+            @apply font-medium;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .animate-marquee {
+                animation-duration: 20s;
+            }
+        }
+    </style>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

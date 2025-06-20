@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academics - CSI Vellore Diocese Matriculation Higher Secondary School</title>
+    <meta name="description" content="Explore our comprehensive curriculum, academic achievements, and educational resources from KG to 12th grade at CSI Vellore Diocese School." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcsischool7729back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background font-body">
+    <!-- Header Section -->
+    <header class="bg-surface shadow-subtle sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 lg:h-20">
+                <!-- Logo Section -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 lg:w-16 lg:h-16 bg-primary rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 lg:w-10 lg:h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                            <path d="M12 7L8 10v4l4 2 4-2v-4l-4-3z" fill="white" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <div class="hidden sm:block">
+                        <h1 class="text-lg lg:text-xl font-inter font-bold text-text-primary">CSI Vellore Diocese</h1>
+                        <p class="text-xs lg:text-sm text-text-secondary">Matriculation Higher Secondary School</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="homepage.html" class="nav-link font-medium">Home</a>
+                    <a href="about_school.html" class="nav-link">About School</a>
+                    <a href="academics.html" class="nav-link active font-medium">Academics</a>
+                    <a href="facilities.html" class="nav-link">Facilities</a>
+                    <a href="events_news.html" class="nav-link">Events & News</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button & Search -->
+                <div class="flex items-center space-x-3">
+                    <button id="search-button" class="p-2 rounded-md hover:bg-gray-100 focus-ring" aria-label="Search">
+                        <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </button>
+                    <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md hover:bg-gray-100 focus-ring" aria-label="Menu">
+                        <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="lg:hidden hidden border-t border-gray-200">
+                <div class="py-4 space-y-2">
+                    <a href="homepage.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Home</a>
+                    <a href="about_school.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">About School</a>
+                    <a href="academics.html" class="block px-4 py-2 text-primary font-medium bg-primary-50 rounded-md">Academics</a>
+                    <a href="facilities.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Facilities</a>
+                    <a href="events_news.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Events & News</a>
+                    <a href="contact.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="flex items-start justify-center pt-16 px-4">
+            <div class="bg-surface rounded-lg shadow-prominent w-full max-w-2xl">
+                <div class="p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <svg class="w-6 h-6 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                        <input type="text" id="search-input" placeholder="Search by grade, subject, or achievement..." class="form-input flex-1" />
+                        <button id="close-search" class="p-2 hover:bg-gray-100 rounded-md">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <button class="search-filter px-3 py-1 bg-primary-100 text-primary text-sm rounded-full hover:bg-primary-200" data-filter="grade">Grade</button>
+                        <button class="search-filter px-3 py-1 bg-secondary-100 text-secondary text-sm rounded-full hover:bg-secondary-200" data-filter="subject">Subject</button>
+                        <button class="search-filter px-3 py-1 bg-accent-100 text-accent text-sm rounded-full hover:bg-accent-200" data-filter="achievement">Achievement</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="bg-surface border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <nav class="breadcrumb">
+                <a href="homepage.html" class="breadcrumb-item hover:text-primary">Home</a>
+                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                <span class="breadcrumb-item active">Academics</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="py-16 lg:py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="inline-flex items-center space-x-2 bg-primary-100 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                    </svg>
+                    <span>Academic Excellence</span>
+                </div>
+                <h1 class="text-fluid-4xl font-inter font-bold text-text-primary mb-6">
+                    Comprehensive Academic Program
+                </h1>
+                <p class="text-fluid-xl text-text-secondary max-w-4xl mx-auto leading-relaxed">
+                    Discover our rigorous curriculum designed to nurture intellectual growth, critical thinking, and academic excellence from Kindergarten through Grade 12
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grade Level Navigation Tabs -->
+    <section class="bg-surface sticky top-16 lg:top-20 z-40 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex overflow-x-auto scrollbar-hide py-4">
+                <div class="flex space-x-2 min-w-max">
+                    <button class="grade-tab active px-4 py-2 bg-primary text-white rounded-md font-medium whitespace-nowrap" data-grade="kg">KG</button>
+                    <button class="grade-tab px-4 py-2 bg-gray-100 text-text-primary rounded-md font-medium hover:bg-gray-200 whitespace-nowrap" data-grade="1-5">Grades 1-5</button>
+                    <button class="grade-tab px-4 py-2 bg-gray-100 text-text-primary rounded-md font-medium hover:bg-gray-200 whitespace-nowrap" data-grade="6-8">Grades 6-8</button>
+                    <button class="grade-tab px-4 py-2 bg-gray-100 text-text-primary rounded-md font-medium hover:bg-gray-200 whitespace-nowrap" data-grade="9-10">Grades 9-10</button>
+                    <button class="grade-tab px-4 py-2 bg-gray-100 text-text-primary rounded-md font-medium hover:bg-gray-200 whitespace-nowrap" data-grade="11-12">Grades 11-12</button>
+                    <button class="grade-tab px-4 py-2 bg-gray-100 text-text-primary rounded-md font-medium hover:bg-gray-200 whitespace-nowrap" data-grade="achievements">Achievements</button>
+                    <button class="grade-tab px-4 py-2 bg-gray-100 text-text-primary rounded-md font-medium hover:bg-gray-200 whitespace-nowrap" data-grade="resources">Resources</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="py-16 lg:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-4 lg:gap-12">
+                <!-- Desktop Sidebar Navigation -->
+                <div class="hidden lg:block lg:col-span-1">
+                    <div class="sticky top-40">
+                        <div class="card-moderate p-6">
+                            <h3 class="font-inter font-bold text-text-primary mb-4">Grade Levels</h3>
+                            <nav class="space-y-2">
+                                <button class="sidebar-nav active w-full text-left px-4 py-3 bg-primary-50 text-primary rounded-md font-medium" data-grade="kg">Kindergarten</button>
+                                <button class="sidebar-nav w-full text-left px-4 py-3 text-text-primary hover:bg-gray-50 rounded-md" data-grade="1-5">Primary (1-5)</button>
+                                <button class="sidebar-nav w-full text-left px-4 py-3 text-text-primary hover:bg-gray-50 rounded-md" data-grade="6-8">Middle (6-8)</button>
+                                <button class="sidebar-nav w-full text-left px-4 py-3 text-text-primary hover:bg-gray-50 rounded-md" data-grade="9-10">Secondary (9-10)</button>
+                                <button class="sidebar-nav w-full text-left px-4 py-3 text-text-primary hover:bg-gray-50 rounded-md" data-grade="11-12">Higher Secondary (11-12)</button>
+                            </nav>
+                            <hr class="my-6 border-gray-200" />
+                            <nav class="space-y-2">
+                                <button class="sidebar-nav w-full text-left px-4 py-3 text-text-primary hover:bg-gray-50 rounded-md" data-grade="achievements">Achievements</button>
+                                <button class="sidebar-nav w-full text-left px-4 py-3 text-text-primary hover:bg-gray-50 rounded-md" data-grade="resources">Resources</button>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="lg:col-span-3">
+                    <!-- Kindergarten Content -->
+                    <div id="content-kg" class="grade-content">
+                        <div class="mb-12">
+                            <div class="flex items-center space-x-3 mb-6">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="text-fluid-3xl font-inter font-bold text-text-primary">Kindergarten Program</h2>
+                                    <p class="text-text-secondary">Foundation for lifelong learning</p>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                                <div class="card-moderate p-6">
+                                    <h3 class="font-inter font-bold text-text-primary mb-4">Learning Objectives</h3>
+                                    <ul class="space-y-3 text-text-secondary">
+                                        <li class="flex items-start space-x-2">
+                                            <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            <span>Develop basic literacy and numeracy skills</span>
+                                        </li>
+                                        <li class="flex items-start space-x-2">
+                                            <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            <span>Foster social and emotional development</span>
+                                        </li>
+                                        <li class="flex items-start space-x-2">
+                                            <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            <span>Encourage creativity through arts and crafts</span>
+                                        </li>
+                                        <li class="flex items-start space-x-2">
+                                            <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            <span>Build motor skills through play-based learning</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="card-moderate p-6">
+                                    <h3 class="font-inter font-bold text-text-primary mb-4">Key Subjects</h3>
+                                    <div class="space-y-3">
+                                        <div class="subject-accordion">
+                                            <button class="subject-toggle w-full flex items-center justify-between p-3 bg-gray-50 rounded-md hover:bg-gray-100">
+                                                <span class="font-medium text-text-primary">English Language</span>
+                                                <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                                </svg>
+                                            </button>
+                                            <div class="subject-content hidden p-3 text-sm text-text-secondary">
+                                                Phonics, vocabulary building, storytelling, and basic reading comprehension through interactive activities.
+                                            </div>
+                                        </div>
+                                        <div class="subject-accordion">
+                                            <button class="subject-toggle w-full flex items-center justify-between p-3 bg-gray-50 rounded-md hover:bg-gray-100">
+                                                <span class="font-medium text-text-primary">Mathematics</span>
+                                                <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                                </svg>
+                                            </button>
+                                            <div class="subject-content hidden p-3 text-sm text-text-secondary">
+                                                Number recognition, counting, basic shapes, patterns, and simple addition/subtraction concepts.
+                                            </div>
+                                        </div>
+                                        <div class="subject-accordion">
+                                            <button class="subject-toggle w-full flex items-center justify-between p-3 bg-gray-50 rounded-md hover:bg-gray-100">
+                                                <span class="font-medium text-text-primary">Environmental Studies</span>
+                                                <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                                </svg>
+                                            </button>
+                                            <div class="subject-content hidden p-3 text-sm text-text-secondary">
+                                                Nature awareness, seasons, animals, plants, and basic science concepts through observation and exploration.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sample Timetable -->
+                            <div class="card-moderate p-6">
+                                <h3 class="font-inter font-bold text-text-primary mb-6">Sample Daily Schedule</h3>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm">
+                                        <thead>
+                                            <tr class="border-b border-gray-200">
+                                                <th class="text-left py-3 px-4 font-medium text-text-primary">Time</th>
+                                                <th class="text-left py-3 px-4 font-medium text-text-primary">Activity</th>
+                                                <th class="text-left py-3 px-4 font-medium text-text-primary">Duration</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-gray-100">
+                                            <tr>
+                                                <td class="py-3 px-4 text-text-secondary">9:00 - 9:30 AM</td>
+                                                <td class="py-3 px-4 text-text-primary">Morning Circle Time</td>
+                                                <td class="py-3 px-4 text-text-secondary">30 mins</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 px-4 text-text-secondary">9:30 - 10:15 AM</td>
+                                                <td class="py-3 px-4 text-text-primary">Language Arts</td>
+                                                <td class="py-3 px-4 text-text-secondary">45 mins</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 px-4 text-text-secondary">10:15 - 10:30 AM</td>
+                                                <td class="py-3 px-4 text-text-primary">Snack Break</td>
+                                                <td class="py-3 px-4 text-text-secondary">15 mins</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 px-4 text-text-secondary">10:30 - 11:15 AM</td>
+                                                <td class="py-3 px-4 text-text-primary">Mathematics</td>
+                                                <td class="py-3 px-4 text-text-secondary">45 mins</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 px-4 text-text-secondary">11:15 - 12:00 PM</td>
+                                                <td class="py-3 px-4 text-text-primary">Creative Arts</td>
+                                                <td class="py-3 px-4 text-text-secondary">45 mins</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grades 1-5 Content -->
+                    <div id="content-1-5" class="grade-content hidden">
+                        <div class="mb-12">
+                            <div class="flex items-center space-x-3 mb-6">
+                                <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="text-fluid-3xl font-inter font-bold text-text-primary">Primary Education (Grades 1-5)</h2>
+                                    <p class="text-text-secondary">Building strong academic foundations</p>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                                <div class="card-moderate p-6 text-center">
+                                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="font-inter font-bold text-text-primary mb-2">Core Subjects</h3>
+                                    <p class="text-sm text-text-secondary">English, Mathematics, Science, Social Studies, Tamil</p>
+                                </div>
+                                <div class="card-moderate p-6 text-center">
+                                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="font-inter font-bold text-text-primary mb-2">Special Programs</h3>
+                                    <p class="text-sm text-text-secondary">Art, Music, Physical Education, Computer Basics</p>
+                                </div>
+                                <div class="card-moderate p-6 text-center">
+                                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="font-inter font-bold text-text-primary mb-2">Skills Focus</h3>
+                                    <p class="text-sm text-text-secondary">Critical thinking, Problem solving, Communication</p>
+                                </div>
+                            </div>
+
+                            <!-- Subject Details Accordion -->
+                            <div class="space-y-4">
+                                <div class="card-moderate">
+                                    <button class="subject-toggle w-full flex items-center justify-between p-6 text-left">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+                                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h3 class="font-inter font-bold text-text-primary">English Language Arts</h3>
+                                                <p class="text-sm text-text-secondary">Reading, Writing, Speaking, Listening</p>
+                                            </div>
+                                        </div>
+                                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                        </svg>
+                                    </button>
+                                    <div class="subject-content hidden px-6 pb-6">
+                                        <div class="grid md:grid-cols-2 gap-6">
+                                            <div>
+                                                <h4 class="font-medium text-text-primary mb-3">Learning Outcomes</h4>
+                                                <ul class="space-y-2 text-sm text-text-secondary">
+                                                    <li>• Develop fluent reading skills</li>
+                                                    <li>• Master basic grammar and vocabulary</li>
+                                                    <li>• Write coherent paragraphs and stories</li>
+                                                    <li>• Improve oral communication skills</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-medium text-text-primary mb-3">Assessment Methods</h4>
+                                                <ul class="space-y-2 text-sm text-text-secondary">
+                                                    <li>• Continuous assessment</li>
+                                                    <li>• Reading comprehension tests</li>
+                                                    <li>• Creative writing assignments</li>
+                                                    <li>• Oral presentations</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-moderate">
+                                    <button class="subject-toggle w-full flex items-center justify-between p-6 text-left">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center">
+                                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h3 class="font-inter font-bold text-text-primary">Mathematics</h3>
+                                                <p class="text-sm text-text-secondary">Numbers, Operations, Geometry, Measurement</p>
+                                            </div>
+                                        </div>
+                                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                        </svg>
+                                    </button>
+                                    <div class="subject-content hidden px-6 pb-6">
+                                        <div class="grid md:grid-cols-2 gap-6">
+                                            <div>
+                                                <h4 class="font-medium text-text-primary mb-3">Key Topics</h4>
+                                                <ul class="space-y-2 text-sm text-text-secondary">
+                                                    <li>• Number systems and place value</li>
+                                                    <li>• Basic arithmetic operations</li>
+                                                    <li>• Fractions and decimals</li>
+                                                    <li>• Geometry and measurement</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-medium text-text-primary mb-3">Problem-Solving Skills</h4>
+                                                <ul class="space-y-2 text-sm text-text-secondary">
+                                                    <li>• Logical reasoning</li>
+                                                    <li>• Pattern recognition</li>
+                                                    <li>• Mathematical modeling</li>
+                                                    <li>• Real-world applications</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Achievements Content -->
+                    <div id="content-achievements" class="grade-content hidden">
+                        <div class="mb-12">
+                            <div class="flex items-center space-x-3 mb-6">
+                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="text-fluid-3xl font-inter font-bold text-text-primary">Academic Achievements</h2>
+                                    <p class="text-text-secondary">Celebrating excellence and success</p>
+                                </div>
+                            </div>
+
+                            <!-- Achievement Filter -->
+                            <div class="flex flex-wrap gap-3 mb-8">
+                                <button class="achievement-filter active px-4 py-2 bg-primary text-white rounded-md text-sm font-medium" data-filter="all">All Achievements</button>
+                                <button class="achievement-filter px-4 py-2 bg-gray-100 text-text-primary rounded-md text-sm font-medium hover:bg-gray-200" data-filter="board">Board Exams</button>
+                                <button class="achievement-filter px-4 py-2 bg-gray-100 text-text-primary rounded-md text-sm font-medium hover:bg-gray-200" data-filter="competitions">Competitions</button>
+                                <button class="achievement-filter px-4 py-2 bg-gray-100 text-text-primary rounded-md text-sm font-medium hover:bg-gray-200" data-filter="awards">Awards</button>
+                            </div>
+
+                            <!-- Board Exam Toppers -->
+                            <div class="achievement-section mb-12" data-category="board">
+                                <h3 class="text-fluid-2xl font-inter font-bold text-text-primary mb-8">Board Exam Toppers 2024</h3>
+                                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                    <div class="card-moderate p-6 text-center hover-lift">
+                                        <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
+                                            <img src="https://images.unsplash.com/photo-1494790108755-2616c0763c5e?q=80&w=2787&auto=format&fit=crop" alt="Priya Sharma" class="w-full h-full object-cover" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                        </div>
+                                        <h4 class="font-inter font-bold text-text-primary mb-2">Priya Sharma</h4>
+                                        <p class="text-sm text-text-secondary mb-3">Class XII - Science Stream</p>
+                                        <div class="bg-primary-50 rounded-lg p-3">
+                                            <div class="text-2xl font-bold text-primary">98.2%</div>
+                                            <div class="text-xs text-primary">Overall Percentage</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-moderate p-6 text-center hover-lift">
+                                        <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
+                                            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Arjun Kumar" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop'; this.onerror=null;" />
+                                        </div>
+                                        <h4 class="font-inter font-bold text-text-primary mb-2">Arjun Kumar</h4>
+                                        <p class="text-sm text-text-secondary mb-3">Class X - CBSE Board</p>
+                                        <div class="bg-secondary-50 rounded-lg p-3">
+                                            <div class="text-2xl font-bold text-secondary">96.8%</div>
+                                            <div class="text-xs text-secondary">Overall Percentage</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-moderate p-6 text-center hover-lift">
+                                        <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
+                                            <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Sarah Johnson" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616c0763c5e?q=80&w=2787&auto=format&fit=crop'; this.onerror=null;" />
+                                        </div>
+                                        <h4 class="font-inter font-bold text-text-primary mb-2">Sarah Johnson</h4>
+                                        <p class="text-sm text-text-secondary mb-3">Class XII - Commerce Stream</p>
+                                        <div class="bg-accent-50 rounded-lg p-3">
+                                            <div class="text-2xl font-bold text-accent">95.4%</div>
+                                            <div class="text-xs text-accent">Overall Percentage</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Competition Achievements -->
+                            <div class="achievement-section mb-12" data-category="competitions">
+                                <h3 class="text-fluid-2xl font-inter font-bold text-text-primary mb-8">Competition Achievements</h3>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div class="card-moderate p-6">
+                                        <div class="flex items-start space-x-4">
+                                            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-inter font-bold text-text-primary mb-2">National Science Olympiad</h4>
+                                                <p class="text-sm text-text-secondary mb-3">Gold Medal - Regional Level</p>
+                                                <div class="flex items-center space-x-2">
+                                                    <span class="status-success">1st Position</span>
+                                                    <span class="text-xs text-text-secondary">2024</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-moderate p-6">
+                                        <div class="flex items-start space-x-4">
+                                            <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-inter font-bold text-text-primary mb-2">Inter-School Debate Championship</h4>
+                                                <p class="text-sm text-text-secondary mb-3">Winner - District Level</p>
+                                                <div class="flex items-center space-x-2">
+                                                    <span class="status-success">Champions</span>
+                                                    <span class="text-xs text-text-secondary">2024</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- School Awards -->
+                            <div class="achievement-section" data-category="awards">
+                                <h3 class="text-fluid-2xl font-inter font-bold text-text-primary mb-8">School Recognition</h3>
+                                <div class="card-moderate p-8">
+                                    <div class="grid md:grid-cols-3 gap-8">
+                                        <div class="text-center">
+                                            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                                <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                            </div>
+                                            <h4 class="font-inter font-bold text-text-primary mb-2">Best School Award</h4>
+                                            <p class="text-sm text-text-secondary">Tamil Nadu Education Board</p>
+                                            <p class="text-xs text-text-secondary mt-1">2023-2024</p>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                                <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                                </svg>
+                                            </div>
+                                            <h4 class="font-inter font-bold text-text-primary mb-2">Innovation in Education</h4>
+                                            <p class="text-sm text-text-secondary">Ministry of Education</p>
+                                            <p class="text-xs text-text-secondary mt-1">2024</p>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
+                                                </svg>
+                                            </div>
+                                            <h4 class="font-inter font-bold text-text-primary mb-2">Excellence in Sports</h4>
+                                            <p class="text-sm text-text-secondary">State Sports Authority</p>
+                                            <p class="text-xs text-text-secondary mt-1">2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resources Content -->
+                    <div id="content-resources" class="grade-content hidden">
+                        <div class="mb-12">
+                            <div class="flex items-center space-x-3 mb-6">
+                                <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="text-fluid-3xl font-inter font-bold text-text-primary">Academic Resources</h2>
+                                    <p class="text-text-secondary">Downloadable materials and study guides</p>
+                                </div>
+                            </div>
+
+                            <!-- Resource Categories -->
+                            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                                <div class="card-moderate p-6 hover-lift">
+                                    <div class="flex items-center space-x-3 mb-4">
+                                        <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="font-inter font-bold text-text-primary">Syllabi</h3>
+                                    </div>
+                                    <p class="text-sm text-text-secondary mb-4">Complete curriculum guides for all grades</p>
+                                    <button class="btn-primary w-full text-sm">Download Syllabi</button>
+                                </div>
+
+                                <div class="card-moderate p-6 hover-lift">
+                                    <div class="flex items-center space-x-3 mb-4">
+                                        <div class="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="font-inter font-bold text-text-primary">Sample Papers</h3>
+                                    </div>
+                                    <p class="text-sm text-text-secondary mb-4">Previous year question papers and practice tests</p>
+                                    <button class="btn-secondary w-full text-sm">Download Papers</button>
+                                </div>
+
+                                <div class="card-moderate p-6 hover-lift">
+                                    <div class="flex items-center space-x-3 mb-4">
+                                        <div class="w-10 h-10 bg-accent-100 rounded-full flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="font-inter font-bold text-text-primary">Study Guides</h3>
+                                    </div>
+                                    <p class="text-sm text-text-secondary mb-4">Comprehensive study materials and notes</p>
+                                    <button class="bg-accent text-white px-6 py-3 rounded font-medium w-full text-sm hover:bg-accent-700 transition-colors duration-200">Download Guides</button>
+                                </div>
+                            </div>
+
+                            <!-- Downloadable Resources List -->
+                            <div class="card-moderate">
+                                <div class="p-6 border-b border-gray-200">
+                                    <h3 class="font-inter font-bold text-text-primary">Available Downloads</h3>
+                                </div>
+                                <div class="divide-y divide-gray-100">
+                                    <div class="p-6 flex items-center justify-between hover:bg-gray-50">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+                                                <svg class="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-medium text-text-primary">Grade 10 Mathematics Syllabus</h4>
+                                                <p class="text-sm text-text-secondary">Complete curriculum guide • 2.4 MB</p>
+                                            </div>
+                                        </div>
+                                        <button class="flex items-center space-x-2 text-primary hover:text-primary-700">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                            </svg>
+                                            <span class="text-sm font-medium">Download</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="p-6 flex items-center justify-between hover:bg-gray-50">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                                <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-medium text-text-primary">Class 12 Physics Sample Papers</h4>
+                                                <p class="text-sm text-text-secondary">Previous year questions • 1.8 MB</p>
+                                            </div>
+                                        </div>
+                                        <button class="flex items-center space-x-2 text-primary hover:text-primary-700">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                            </svg>
+                                            <span class="text-sm font-medium">Download</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="p-6 flex items-center justify-between hover:bg-gray-50">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                                <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-medium text-text-primary">Academic Calendar 2024-25</h4>
+                                                <p class="text-sm text-text-secondary">Important dates and events • 956 KB</p>
+                                            </div>
+                                        </div>
+                                        <button class="flex items-center space-x-2 text-primary hover:text-primary-700">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                            </svg>
+                                            <span class="text-sm font-medium">Download</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- School Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-inter font-bold">CSI Vellore Diocese</h3>
+                            <p class="text-gray-300">Matriculation Higher Secondary School</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Nurturing young minds with Christian values and academic excellence since 1985. We are committed to developing confident, compassionate, and capable global citizens.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-700 transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-700 transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-700 transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-700 transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-inter font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about_school.html" class="text-gray-300 hover:text-white transition-colors duration-200">About School</a></li>
+                        <li><a href="academics.html" class="text-gray-300 hover:text-white transition-colors duration-200">Academics</a></li>
+                        <li><a href="facilities.html" class="text-gray-300 hover:text-white transition-colors duration-200">Facilities</a></li>
+                        <li><a href="events_news.html" class="text-gray-300 hover:text-white transition-colors duration-200">Events & News</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors duration-200">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-inter font-semibold mb-6">Contact Info</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <p class="text-gray-300 text-sm">123 Education Street, Vellore, Tamil Nadu 632001</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <p class="text-gray-300 text-sm">+91 416 222 3333</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <p class="text-gray-300 text-sm">info@csivellore.edu.in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-300 text-sm mb-4 md:mb-0">
+                        © 2025 CSI Vellore Diocese Matriculation Higher Secondary School. All Rights Reserved.
+                    </p>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Privacy Policy</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Terms of Service</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Elements -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Search Modal
+        const searchButton = document.getElementById('search-button');
+        const searchModal = document.getElementById('search-modal');
+        const closeSearch = document.getElementById('close-search');
+        const searchInput = document.getElementById('search-input');
+
+        searchButton.addEventListener('click', () => {
+            searchModal.classList.remove('hidden');
+            searchInput.focus();
+        });
+
+        closeSearch.addEventListener('click', () => {
+            searchModal.classList.add('hidden');
+        });
+
+        searchModal.addEventListener('click', (e) => {
+            if (e.target === searchModal) {
+                searchModal.classList.add('hidden');
+            }
+        });
+
+        // Grade Tab Navigation
+        const gradeTabs = document.querySelectorAll('.grade-tab');
+        const sidebarNavs = document.querySelectorAll('.sidebar-nav');
+        const gradeContents = document.querySelectorAll('.grade-content');
+
+        function showGradeContent(grade) {
+            // Hide all content
+            gradeContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // Show selected content
+            const targetContent = document.getElementById(`content-${grade}`);
+            if (targetContent) {
+                targetContent.classList.remove('hidden');
+            }
+
+            // Update tab states
+            gradeTabs.forEach(tab => {
+                tab.classList.remove('active', 'bg-primary', 'text-white');
+                tab.classList.add('bg-gray-100', 'text-text-primary');
+            });
+
+            sidebarNavs.forEach(nav => {
+                nav.classList.remove('active', 'bg-primary-50', 'text-primary');
+                nav.classList.add('text-text-primary');
+            });
+
+            // Activate current tab
+            const activeTab = document.querySelector(`[data-grade="${grade}"]`);
+            if (activeTab) {
+                if (activeTab.classList.contains('grade-tab')) {
+                    activeTab.classList.add('active', 'bg-primary', 'text-white');
+                    activeTab.classList.remove('bg-gray-100', 'text-text-primary');
+                } else if (activeTab.classList.contains('sidebar-nav')) {
+                    activeTab.classList.add('active', 'bg-primary-50', 'text-primary');
+                    activeTab.classList.remove('text-text-primary');
+                }
+            }
+        }
+
+        // Add event listeners to tabs
+        gradeTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const grade = tab.getAttribute('data-grade');
+                showGradeContent(grade);
+            });
+        });
+
+        sidebarNavs.forEach(nav => {
+            nav.addEventListener('click', () => {
+                const grade = nav.getAttribute('data-grade');
+                showGradeContent(grade);
+            });
+        });
+
+        // Subject Accordion
+        const subjectToggles = document.querySelectorAll('.subject-toggle');
+
+        subjectToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const accordion = toggle.closest('.subject-accordion');
+                const content = accordion.querySelector('.subject-content');
+                const arrow = toggle.querySelector('svg');
+
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    arrow.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    arrow.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Achievement Filter
+        const achievementFilters = document.querySelectorAll('.achievement-filter');
+        const achievementSections = document.querySelectorAll('.achievement-section');
+
+        achievementFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                const filterValue = filter.getAttribute('data-filter');
+
+                // Update filter button states
+                achievementFilters.forEach(f => {
+                    f.classList.remove('active', 'bg-primary', 'text-white');
+                    f.classList.add('bg-gray-100', 'text-text-primary');
+                });
+
+                filter.classList.add('active', 'bg-primary', 'text-white');
+                filter.classList.remove('bg-gray-100', 'text-text-primary');
+
+                // Show/hide achievement sections
+                achievementSections.forEach(section => {
+                    if (filterValue === 'all' || section.getAttribute('data-category') === filterValue) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search Functionality
+        const searchFilters = document.querySelectorAll('.search-filter');
+
+        searchFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                const filterType = filter.getAttribute('data-filter');
+                searchInput.placeholder = `Search by ${filterType}...`;
+                searchInput.focus();
+            });
+        });
+
+        // Initialize with KG content
+        showGradeContent('kg');
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-moderate');
+            } else {
+                header.classList.remove('shadow-moderate');
+            }
+        });
+    </script>
+
+    <style>
+        /* Hide scrollbar for horizontal scroll */
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Smooth transitions for all interactive elements */
+        .grade-tab, .sidebar-nav, .achievement-filter {
+            transition: all 200ms ease-in-out;
+        }
+        
+        .subject-toggle svg {
+            transition: transform 200ms ease-in-out;
+        }
+        
+        /* Responsive table styles */
+        @media (max-width: 640px) {
+            table {
+                font-size: 0.875rem;
+            }
+            
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

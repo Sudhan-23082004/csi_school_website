@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Institution - Welcome</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #FAFAFA;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .redirect-container {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        .logo {
+            font-family: 'Inter', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2563EB;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            color: #6B7280;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #E5E7EB;
+            border-top: 4px solid #2563EB;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .page-links {
+            display: grid;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+        
+        .page-link {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            background: #F3F4F6;
+            color: #374151;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 200ms ease-in-out;
+            font-weight: 500;
+        }
+        
+        .page-link:hover {
+            background: #2563EB;
+            color: white;
+            transform: translateY(-1px);
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .loading-spinner {
+                animation: none;
+            }
+            .page-link:hover {
+                transform: none;
+            }
+        }
+    </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcsischool7729back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body>
+    <div class="redirect-container">
+        <div class="logo">Educational Excellence</div>
+        <p class="subtitle">Welcome to our institution's digital gateway</p>
+        
+        <div class="loading-spinner"></div>
+        <p style="color: #6B7280; margin-bottom: 1rem;">Redirecting to homepage...</p>
+        
+        <div class="page-links">
+            <a href="pages/homepage.html" class="page-link">🏠 Homepage</a>
+            <a href="pages/about_school.html" class="page-link">🏫 About School</a>
+            <a href="pages/academics.html" class="page-link">📚 Academics</a>
+            <a href="pages/facilities.html" class="page-link">🏢 Facilities</a>
+            <a href="pages/events_news.html" class="page-link">📰 Events & News</a>
+            <a href="pages/contact.html" class="page-link">📞 Contact</a>
+        </div>
+    </div>
+
+    <script>
+        // Auto-redirect to homepage after 3 seconds
+        setTimeout(function() {
+            window.location.href = 'pages/homepage.html';
+        }, 3000);
+        
+        // Add click tracking for manual navigation
+        document.querySelectorAll('.page-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Add a small delay for visual feedback
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                
+                // Add active state
+                this.style.background = '#1D4ED8';
+                this.style.transform = 'scale(0.98)';
+                
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 150);
+            });
+        });
+        
+        // Accessibility: Allow keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                const focusedElement = document.activeElement;
+                if (focusedElement.classList.contains('page-link')) {
+                    focusedElement.click();
+                }
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>
