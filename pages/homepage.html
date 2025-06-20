@@ -72,8 +72,8 @@
                         <h2 class="text-fluid-3xl lg:text-fluid-4xl font-inter font-bold mb-4">Excellence in Education</h2>
                         <p class="text-fluid-lg lg:text-fluid-xl mb-8">Nurturing young minds with Christian values and academic brilliance</p>
                         <div class="space-x-4">
-                            <button class="btn-primary hover-lift">Apply for Admission</button>
-                            <button class="bg-white text-primary px-6 py-3 rounded font-medium hover:bg-gray-100 transition-all duration-200">Virtual Tour</button>
+                            <a href="about_school.html" class="btn-primary hover-lift">About Us</a>
+                            <a href="events_news.html" class="bg-white text-primary px-6 py-3 rounded font-medium hover:bg-gray-100 transition-all duration-200">Events & News</a>
                         </div>
                     </div>
                 </div>
@@ -88,8 +88,8 @@
                         <h2 class="text-fluid-3xl lg:text-fluid-4xl font-inter font-bold mb-4">Modern Campus Facilities</h2>
                         <p class="text-fluid-lg lg:text-fluid-xl mb-8">State-of-the-art infrastructure for holistic development</p>
                         <div class="space-x-4">
-                            <a href="facilities.html" class="btn-secondary hover-lift inline-block">Explore Facilities</a>
-                            <button class="bg-white text-primary px-6 py-3 rounded font-medium hover:bg-gray-100 transition-all duration-200">Download Prospectus</button>
+                            <a href="academics.html" class="btn-secondary hover-lift">Academics</a>
+                            <a href="facilities.html" class="bg-white text-primary px-6 py-3 rounded font-medium hover:bg-gray-100 transition-all duration-200">Facilities</a>
                         </div>
                     </div>
                 </div>
@@ -97,16 +97,18 @@
 
             <!-- Slide 3 -->
             <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
-                <img src="../images/sports.webp" alt="Students activities" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                <img src="../images/sports.webp" alt="Students activities" class="w-full h-full object-cover"/>
                 <div class="absolute inset-0 bg-black bg-opacity-40"></div>
                 <div class="absolute inset-0 flex items-center justify-center">
                     <div class="text-center text-white px-4 max-w-4xl">
                         <h2 class="text-fluid-3xl lg:text-fluid-4xl font-inter font-bold mb-4">Holistic Development</h2>
                         <p class="text-fluid-lg lg:text-fluid-xl mb-8">Sports, arts, and extracurricular activities for complete growth</p>
                         <div class="space-x-4">
-                            <button class="btn-primary hover-lift">View Achievements</button>
-                            <button class="bg-white text-primary px-6 py-3 rounded font-medium hover:bg-gray-100 transition-all duration-200">Events Calendar</button>
+                            <a href="contact.html" class="bg-white text-primary px-6 py-3 rounded font-medium hover:bg-gray-100 transition-all duration-200">Contact</a>
                         </div>
+                    </div>
+                </div>
+            </div>
                     </div>
                 </div>
             </div>
@@ -403,14 +405,19 @@
         const dots = document.querySelectorAll('.slider-dot');
         const totalSlides = slides.length;
 
+        showSlide(currentSlide);
+
         function showSlide(index) {
             slides.forEach((slide, i) => {
                 slide.style.opacity = i === index ? '1' : '0';
+                slide.style.pointerEvents = i === index ? 'auto' : 'none';
             });
             dots.forEach((dot, i) => {
                 dot.style.opacity = i === index ? '1' : '0.5';
             });
         }
+
+
 
         function nextSlide() {
             currentSlide = (currentSlide + 1) % totalSlides;
@@ -487,7 +494,13 @@
         .animate-marquee {
             animation: marquee 30s linear infinite;
         }
-        
+        .hero-slide {
+            pointer-events: none;
+        }
+        .hero-slide[style*="opacity: 1"] {
+            pointer-events: auto;
+        }
+
         /* Ensure smooth transitions */
         .hero-slide {
             transition: opacity 1s ease-in-out;
