@@ -12,53 +12,53 @@
 </head>
 <body class="bg-background font-body">
     <!-- Header Section -->
-    <header class="bg-surface shadow-subtle sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16 lg:h-20">
-                <!-- Logo Section -->
-                <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 lg:w-16 lg:h-16 bg-surface rounded-full flex items-center justify-center overflow-hidden">
-                        <img src="../images/logo.jpg" alt="CSI Vellore Diocese School Logo" width="48" height="48" style="width: 48px; height: 48px; object-fit: contain;" />
-                    </div>
-                    <div class="hidden sm:block">
-                        <h1 class="text-lg lg:text-xl font-inter font-bold text-text-primary">CSI Vellore Diocese</h1>
-                        <p class="text-xs lg:text-sm text-text-secondary">Matriculation Higher Secondary School</p>
-                    </div>
+<header class="bg-surface shadow-subtle sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 lg:h-20">
+            <!-- Logo Section -->
+            <div class="flex items-center">
+                <div class="w-12 h-12 lg:w-16 lg:h-16 bg-surface rounded-full flex items-center justify-center overflow-hidden">
+                    <img src="../images/logo.jpg" alt="CSI Vellore Diocese School Logo" width="48" height="48" style="width: 48px; height: 48px; object-fit: contain;" />
                 </div>
-
-                <!-- Desktop Navigation -->
-                <nav class="hidden lg:flex items-center space-x-8">
-                    <a href="homepage.html" class="nav-link font-medium">Home</a>
-                    <a href="about_school.html" class="nav-link active font-medium">About School</a>
-                    <a href="academics.html" class="nav-link">Academics</a>
-                    <a href="facilities.html" class="nav-link">Facilities</a>
-                    <a href="events_news.html" class="nav-link">Events & News</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </nav>
-
-                <!-- Mobile Menu Button & Search -->
-                <div class="flex items-center space-x-3">
-                    <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md hover:bg-gray-100 focus-ring" aria-label="Menu">
-                        <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
+                <div class="hidden sm:block ml-3">
+                    <h1 class="text-lg lg:text-xl font-inter font-bold text-text-primary">CSI Vellore Diocese</h1>
+                    <p class="text-xs lg:text-sm text-text-secondary">Matriculation Higher Secondary School</p>
                 </div>
             </div>
 
-            <!-- Mobile Navigation Menu -->
-            <div id="mobile-menu" class="lg:hidden hidden border-t border-gray-200">
-                <div class="py-4 space-y-2">
-                    <a href="homepage.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Home</a>
-                    <a href="about_school.html" class="block px-4 py-2 text-primary font-medium bg-primary-50 rounded-md">About School</a>
-                    <a href="academics.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Academics</a>
-                    <a href="facilities.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Facilities</a>
-                    <a href="events_news.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Events & News</a>
-                    <a href="contact.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Contact</a>
-                </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-8 ml-auto">
+                <a href="homepage.html" class="nav-link active font-medium">Home</a>
+                <a href="about_school.html" class="nav-link">About School</a>
+                <a href="academics.html" class="nav-link">Academics</a>
+                <a href="facilities.html" class="nav-link">Facilities</a>
+                <a href="events_news.html" class="nav-link">Events & News</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="flex items-center space-x-3 lg:hidden">
+                <button id="mobile-menu-button" class="p-2 rounded-md hover:bg-gray-100 focus-ring" aria-label="Menu">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
             </div>
         </div>
-    </header>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden border-t border-gray-200">
+            <div class="py-4 space-y-2 text-right">
+                <a href="homepage.html" class="block px-4 py-2 text-primary font-medium bg-primary-50 rounded-md">Home</a>
+                <a href="about_school.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">About School</a>
+                <a href="academics.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Academics</a>
+                <a href="facilities.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Facilities</a>
+                <a href="events_news.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Events & News</a>
+                <a href="contact.html" class="block px-4 py-2 text-text-primary hover:bg-gray-50 rounded-md">Contact</a>
+            </div>
+        </div>
+    </div>
+</header>
 
     <!-- Breadcrumb Navigation -->
     <section class="bg-surface py-4 border-b border-gray-200">
